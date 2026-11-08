@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi - Dahyun</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+        header { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; }
+        nav { background: #34495e; padding: 0.5rem; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 2rem; max-width: 800px; margin: auto; }
+        section { margin-bottom: 2rem; }
+        footer { background: #2c3e50; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Halo, Saya Dahyun</h1>
+        <p>Mahasiswa Sistem Informasi & Web Developer Pemula</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main>
+        <!-- Bagian Tentang -->
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Saya sedang belajar dasar-dasar pemrograman web menggunakan HTML, CSS, dan PHP untuk membangun sistem aplikasi yang solutif.</p>
+        </section>
+
+        <!-- Bagian Tabel Proyek -->
+        <section id="proyek">
+            <h2>Daftar Proyek</h2>
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <thead>
+                    <tr style="background: #f4f4f4;">
+                        <th>No</th>
+                        <th>Nama Proyek</th>
+                        <th>Teknologi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Kost Pink Management</td>
+                        <td>PHP & Laravel</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Portofolio Web</td>
+                        <td>HTML5 & CSS3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bagian Form Kontak -->
+        <section id="kontak">
+            <h2>Formulir Kontak</h2>
+            <form action="#" method="POST">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" required style="width: 100%; padding: 8px; margin-top: 5px;"><br><br>
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" required style="width: 100%; padding: 8px; margin-top: 5px;"></textarea><br><br>
+
+                <button type="submit" style="background: #2c3e50; color: white; padding: 10px 20px; border: none; cursor: pointer;">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dahyun. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
