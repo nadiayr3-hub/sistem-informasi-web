@@ -1,0 +1,151 @@
+<table border="1" cellspacing="0" cellpadding="8">
+    <colgroup>
+        <col style="background-color: #f9f9f9;">
+        <col span="2">
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Nama Mahasiswa</th>
+            <th colspan="2">Nilai Akademik</th>
+        </tr>
+        <tr>
+            <th>Teori</th>
+            <th>Praktikum</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Amelia Dahyun</td>
+            <td>92</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nadia</td>
+            <td>88</td>
+            <td>90</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2"><b>Rata-rata Kelas</b></td>
+            <td><b>90.0</b></td>
+            <td><b>92.5</b></td>
+        </tr>
+    </tfoot>
+</table>
+#11: Form Interaktif dengan Input Types & Validasi HTML5
+Membuat formulir yang kaya akan elemen input modern, validasi bawaan HTML5 (required, pattern, min/max), dan kontrol aksesibilitas.
+
+HTML
+<form action="/api/register" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Data Identitas User</legend>
+
+        <!-- Input Teks, Email, dan Password -->
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="20"><br><br>
+
+        <label for="email">Email Kampus:</label><br>
+        <input type="email" id="email" name="email" placeholder="user@student.ac.id" required><br><br>
+
+        <!-- Selection Dropdown & Data List -->
+        <label for="prodi">Program Studi:</label><br>
+        <select id="prodi" name="prodi">
+            <option value="">-- Pilih Program Studi --</option>
+            <option value="SI">Sistem Informasi</option>
+            <option value="IF">Informatika</option>
+        </select><br><br>
+
+        <!-- Input Angka, Datepicker, File Upload -->
+        <label for="dob">Tanggal Lahir:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="avatar">Upload Pas Foto (PDF/PNG/JPG):</label><br>
+        <input type="file" id="avatar" name="avatar" accept=".jpg,.png,.pdf"><br><br>
+
+        <!-- Radio & Checkbox -->
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="pria" name="gender" value="L"> <label for="pria">Laki-laki</label>
+        <input type="radio" id="wanita" name="gender" value="P"> <label for="wanita">Perempuan</label><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Saya menyetujui syarat & ketentuan yang berlaku.</label><br><br>
+
+        <button type="submit">Daftar Akun</button>
+        <button type="reset">Reset Input</button>
+    </fieldset>
+</form>
+#12: Layout Semantik Modern HTML5
+Struktur penulisan tata letak (layout) halaman web yang memenuhi standar aksesibilitas SEO modern, menggantikan penggunaan tag <div> yang berlebihan (div soup).
+
+HTML
+<body>
+    <!-- Top Navigation Container -->
+    <header>
+        <div class="logo">AppLogo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <article>
+            <header>
+                <h2>Analisis Perancangan Sistem Basis Data</h2>
+                <p>Dipublikasikan oleh: <b>Dahyun</b> pada <time datetime="2026-11-09">9 November 2026</time></p>
+            </header>
+            <section>
+                <h3>Pendahuluan Model Data</h3>
+                <p>Isi artikel mengenai struktur skema relasional...</p>
+            </section>
+        </article>
+
+        <!-- Sidebar / Supplemental Content -->
+        <aside>
+            <h3>Artikel Terkait</h3>
+            <ul>
+                <li><a href="#">Normalisasi Database (1NF-3NF)</a></li>
+                <li><a href="#">Konstruksi Relasi Entity-Relationship</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Page Footer -->
+    <footer>
+        <p>&copy; 2026 Student Advocacy & System Architecture Lab.</p>
+    </footer>
+</body>
+#13: Embedding Media Video Advanced
+Memutar berkas media video dengan kontrol penuh, gambar sampul (poster), serta opsi fallback format media.
+
+HTML
+<video width="100%" height="auto" controls poster="assets/images/video-thumbnail.jpg" preload="metadata">
+    <!-- Format Media Utama -->
+    <source src="assets/media/demo-aplikasi.mp4" type="video/mp4">
+    <source src="assets/media/demo-aplikasi.webm" type="video/webm">
+    
+    <!-- Subtitle / Caption File -->
+    <track src="subtitles_id.vtt" kind="subtitles" srclang="id" label="Bahasa Indonesia">
+    
+    Browser Anda tidak mendukung pemutar media video HTML5.
+</video>
+#14: Embedding Media Audio Advanced
+Penerapan berkas pemutar suara/audio interaktif pada dokumen web.
+
+HTML
+<figure>
+    <figcaption>Dengarkan PodCast Penjelasan HTML5:</figcaption>
+    <audio controls preload="none">
+        <source src="assets/audio/podcast-ep1.mp3" type="audio/mpeg">
+        <source src="assets/audio/podcast-ep1.ogg" type="audio/ogg">
+        Browser Anda tidak mendukung tag audio HTML5.
+    </audio>
+</figure>
