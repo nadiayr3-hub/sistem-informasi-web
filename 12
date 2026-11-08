@@ -1,0 +1,41 @@
+<body>
+   
+    <header>
+        <div class="logo">AppLogo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <article>
+            <header>
+                <h2>Analisis Perancangan Sistem Basis Data</h2>
+                <p>Dipublikasikan oleh: <b>Dahyun</b> pada <time datetime="2026-11-09">9 November 2026</time></p>
+            </header>
+            <section>
+                <h3>Pendahuluan Model Data</h3>
+                <p>Isi artikel mengenai struktur skema relasional...</p>
+            </section>
+        </article>
+
+      
+        <aside>
+            <h3>Artikel Terkait</h3>
+            <ul>
+                <li><a href="#">Normalisasi Database (1NF-3NF)</a></li>
+                <li><a href="#">Konstruksi Relasi Entity-Relationship</a></li>
+            </ul>
+        </aside>
+    </main>
+
+   
+    <footer>
+        <p>&copy; 2026 Student Advocacy & System Architecture Lab.</p>
+    </footer>
+</body>
